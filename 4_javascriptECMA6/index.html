@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Individual Js</title>
+    <style>
+        html {font-family: "helvetica neue", helvetica, arial, sans-serif;}
+        th {letter-spacing: 2px;}
+        td {letter-spacing: 1px;}
+        tbody td {text-align: center;}
+        tfoot th {text-align: right;}
+        tbody tr:nth-child(odd) {background-color: #aaa;}
+    </style>
+</head>
+
+<body onload="iniciar()">
+    <header>
+        <h1>Prueba Individual Javascript</h1>
+        <h2>¿ Me demuestras lo que sabes ?</h2>
+    </header>    
+    <main>
+        <button onclick="empezar()">Empezar</button>
+        <section id="test">
+        </section>
+    </main>    
+    <footer>
+        <section>
+            <button onclick="comprobar()">Comprobar</button>
+            <!--RESPUESTAS SOLUCIÓN:
+                1.Solo Front-end
+                2.Javascript
+                3.Javascript
+                4.Clean Code
+                5.ES6, ES2015-->
+            <button onclick="reintentar()">Volver a intentarlo</button>
+            <button onclick="rendirse()">Rendirse</button>
+        </section>
+
+        <table>
+        
+            <thead>
+            <tr>
+                <th scope="col">Intento</th>
+                <th scope="col">Resultado</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!--PISTA 2: Este código tendrás que insertarlo DESDE JS cada vez que la persona usuaria realice un test-->
+            <!--
+            <tr>
+                <td>aqui escribirás el número de intento</td>
+                <td>aqui escribirás el resultado</td>
+            </tr>
+            -->
+            </tbody>
+            <tfoot>
+            <tr>
+                <th scope="row" colspan="2">Mejor resultado</th>
+                <td colspan="2"></td>
+            </tr>
+            </tfoot>
+        </table>
+     </footer>
+</body>
+<script src="js/myscript.js"></script>
+
+</html>
